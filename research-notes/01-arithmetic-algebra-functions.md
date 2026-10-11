@@ -1,12 +1,12 @@
 # Arithmetic, algebra, and functions
-
+```
 Note ID: MATH-01
 Tags: math, foundations
 Status: Completed - mathematical foundations
 Written by: Ganesh Rama Hegde
 Last updated: 11-Oct-2026
 Suggested time: Week 1, Day 1: notation, functions, and essential algebra; 1-2 hours
-
+```
 
 ## Topics to cover
 

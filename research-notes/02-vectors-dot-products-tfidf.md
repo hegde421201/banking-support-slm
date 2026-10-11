@@ -2,20 +2,17 @@
 
 Note ID: MATH-02
 Tags: math, text-features
-Status: Not started
-Written by: [Your name]
-Last updated: [Date]
+Status: In Progress
+Written by: Ganesh Rama Hegde
+Last updated: 12-Oct-2026
 Suggested time: Week 1, Day 2: vectors, matrices, dot products, and TF-IDF; 4-5 hours
-
-This is a writing template. The prompts are not evidence of completed work.
 
 ## Topics to cover
 
 Vectors, matrices, matching dimensions, dot products, word counts, and TF-IDF.
 
-## My explanation
+## Explanation
 
-[Explain the topic in your own words. Define new terms.]
 
 ## Worked example
 
@@ -35,7 +32,7 @@ Vectors, matrices, matching dimensions, dot products, word counts, and TF-IDF.
 
 [Record what you ran, the settings, the actual result, and any error.]
 
-## Questions and corrections
+## Questions, answers, and corrections
 
 [Record what is unclear and how your explanation changed.]
 
