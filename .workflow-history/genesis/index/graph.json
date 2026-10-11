@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "project": "banking-support-slm",
+  "revision": null,
+  "sourceHash": "c79b1c9f6fcb2d3f19455fc693ddd445e9b093294e7d11a83f49a65cf15c3c9f",
+  "provenance": {
+    "tool": "genesis-graphizer",
+    "method": "static-analysis",
+    "confidenceScale": "0..1"
+  },
+  "nodes": [
+    {
+      "id": "file:src/prepare_data.py",
+      "type": "file",
+      "label": "src/prepare_data.py",
+      "path": "src/prepare_data.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "fdcb58f5ca4e6d284513c43eeb486eee6db14c4944a77ac233db1ab9e5f0bd36"
+    },
+    {
+      "id": "file:src/schema.py",
+      "type": "file",
+      "label": "src/schema.py",
+      "path": "src/schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "106fad0978cdee8e1fb0fbf1da55c955e4e7cff334d8a881b06ce79153f48431"
+    },
+    {
+      "id": "file:tests/test_prepare_data.py",
+      "type": "file",
+      "label": "tests/test_prepare_data.py",
+      "path": "tests/test_prepare_data.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "7a8eb5ffe939940f7cab5347c305c41ecb7d9487857eb23e3401f64adc6d478e"
+    },
+    {
+      "id": "file:tests/test_schema.py",
+      "type": "file",
+      "label": "tests/test_schema.py",
+      "path": "tests/test_schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0b68f1391d1f75c94f81f9600cf438fe130aad0196578322893e26243a9724df"
+    }
+  ],
+  "edges": [],
+  "warnings": [
+    "Python AST unavailable: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases."
+  ],
+  "stats": {
+    "unresolvedCalls": 0
+  }
+}

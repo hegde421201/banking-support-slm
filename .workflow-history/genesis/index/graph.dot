@@ -1,0 +1,9 @@
+digraph genesis {
+  rankdir=LR;
+  node [shape=box,fontname="system-ui"];
+  "file:src/prepare_data.py" [label="src/prepare_data.py",class="file"];
+  "file:src/schema.py" [label="src/schema.py",class="file"];
+  "file:tests/test_prepare_data.py" [label="tests/test_prepare_data.py",class="file"];
+  "file:tests/test_schema.py" [label="tests/test_schema.py",class="file"];
+
+}

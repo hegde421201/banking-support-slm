@@ -1,0 +1,736 @@
+{
+  "schema_version": 2,
+  "project": {
+    "name": "banking-support-slm",
+    "mode": "init",
+    "profile": "prototype",
+    "objective": "Build a local CPU-only banking support decision assistant using public intent data and fictional policies, with reviewed next-action and reply examples, no paid services and no real banking operations.",
+    "constraints": [],
+    "non_goals": [],
+    "trust_boundary": "local repository",
+    "created_at": "2026-10-11T02:01:57.913Z",
+    "updated_at": "2026-10-11T11:46:13.879Z"
+  },
+  "policy": {
+    "ponytail": "full",
+    "autonomy": "human-in-the-loop",
+    "learned_rule_promotion": "human-required",
+    "cleanup": "propose-only",
+    "traces": {
+      "storage": "local",
+      "commit_raw": false,
+      "redact_secrets": true
+    }
+  },
+  "lifecycle": {
+    "phase": "build",
+    "status": "active",
+    "active_task": "DATA-2",
+    "blocker": null,
+    "next_action": "Obtain independent human review of data/REVIEW.md, src/prepare_data.py, tests/test_prepare_data.py and reports/data_manifest.json. All 11 automated checks passed. Do not mark the task complete until the review gate is approved."
+  },
+  "commands": {},
+  "workflow": {
+    "type": "new-product",
+    "started_at": "2026-10-11T02:01:57.932Z",
+    "spec_check": {
+      "at": "2026-10-11T11:23:16.920Z",
+      "source_hash": "d840865e79c13af890aabebca703ac0f60ce90b0384f4231d95af535a4d6395a",
+      "requirements": [
+        "AC-1",
+        "AC-2",
+        "AC-3",
+        "AC-4",
+        "AC-5",
+        "AC-6",
+        "AC-7",
+        "AC-8",
+        "AC-9",
+        "FR-1",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "FR-6",
+        "FR-7",
+        "FR-8",
+        "NFR-1",
+        "NFR-2",
+        "NFR-3",
+        "NFR-4",
+        "NFR-5"
+      ]
+    },
+    "plan_check": {
+      "at": "2026-10-11T11:23:17.729Z",
+      "source_hash": "431fa4337c60b21f15c30d2ded0a662d505545faa71245eec302e592895119b2"
+    },
+    "plan_approval": {
+      "human": "Project owner (user in this chat)",
+      "reason": "User reviewed the explained plan and said reviewed.please start with the next step on 2026-10-11. Start DATA-1; do not treat this as annotation approval.",
+      "at": "2026-10-11T11:35:22.859Z",
+      "source_hash": "431fa4337c60b21f15c30d2ded0a662d505545faa71245eec302e592895119b2"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "SPEC-1",
+      "type": "specification",
+      "path": "SPEC.md",
+      "status": "approved",
+      "requirements": [
+        "AC-1",
+        "AC-2",
+        "AC-3",
+        "AC-4",
+        "AC-5",
+        "AC-6",
+        "AC-7",
+        "AC-8",
+        "AC-9",
+        "FR-1",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "FR-6",
+        "FR-7",
+        "FR-8",
+        "NFR-1",
+        "NFR-2",
+        "NFR-3",
+        "NFR-4",
+        "NFR-5"
+      ],
+      "source_hash": "d840865e79c13af890aabebca703ac0f60ce90b0384f4231d95af535a4d6395a",
+      "approval": {
+        "human": "Project owner (user in this chat)",
+        "reason": "Carry forward existing reviewed-and-proceed authorization after adding the user-requested BANKING77 definition. No requirement or project scope changed. No new plan approval is claimed.",
+        "at": "2026-10-11T11:23:17.245Z",
+        "source_hash": "d840865e79c13af890aabebca703ac0f60ce90b0384f4231d95af535a4d6395a"
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "ASSUMPTION-cdfceb9a",
+      "text": "Eight English banking intents, fictional policy demo-bank/v0.1, and eight weeks at 8-10 hours per week are proposed, not confirmed. Reviewer availability and Python familiarity are unknown.",
+      "status": "open",
+      "source": "SPEC.md",
+      "recorded_at": "2026-10-11T02:05:08.842Z",
+      "paths": [],
+      "tags": []
+    }
+  ],
+  "invariants": [
+    {
+      "id": "INVARIANT-820b007a",
+      "text": "Never fabricate reviewer identities, human approvals, measured model results, or real banking operations. All initial examples are assistant-authored unreviewed development proposals.",
+      "source": "SPEC.md; examples/starter_cases.jsonl",
+      "recorded_at": "2026-10-11T02:05:08.224Z",
+      "paths": [],
+      "tags": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DECISION-64e626c5",
+      "title": "Local zero-budget prototype",
+      "text": "User requested the project under D:/Antern and reported no GPU access or compute budget. The draft scope is a CPU-only banking support simulator; no implementation or specification approval has been given.",
+      "status": "accepted",
+      "source": "User messages in project setup conversation, 2026-10-11",
+      "recorded_at": "2026-10-11T02:05:07.521Z",
+      "paths": [],
+      "tags": []
+    },
+    {
+      "id": "DECISION-cede8ad5",
+      "title": "Research design reviewed; bounded implementation plan prepared",
+      "text": "The project owner reviewed the research files and requested moving forward on 2026-10-11. Specification approval is recorded using the transparent role label Project owner (user in this chat), not an inferred personal name. Course-style and conversational review wording was removed without changing research methods or individual case labels. Genesis requires complete requirement coverage, so seven dependency-ordered tasks were prepared; DATA-1 is the first slice. Plan check passed for 22 requirements; plan approval and all implementation tests remain pending. C:/Python312/python.exe is Python 3.12.0. No independent reviewer is claimed.",
+      "status": "accepted",
+      "source": "User message 2026-10-11; START_HERE.md; .genesis/PLAN.md",
+      "recorded_at": "2026-10-11T09:36:09.967Z",
+      "paths": [],
+      "tags": []
+    },
+    {
+      "id": "DECISION-01397d6f",
+      "title": "DATA-2 duplicate handling and split rule",
+      "text": "Pinned BANKING77 to revision 57ec275d8078af65b7731c2a98be812d844a6d6b. Before inspecting matches, fixed NFKC/casefold/word normalization and token Jaccard threshold 0.9. Connected lexical groups remain together. Preserve all selected official test rows; exclude official train rows in test-overlapping groups. Hash whole groups with seed 20261011 for an approximate 20 percent validation share. This is lexical screening, not proof of semantic independence. Keep source bytes and original membership; derived records retain source row, text hash and revision. No test result was used to select model settings.",
+      "status": "accepted",
+      "source": "src/prepare_data.py; reports/data_manifest.json; data/REVIEW.md",
+      "recorded_at": "2026-10-11T11:45:22.143Z",
+      "paths": [],
+      "tags": []
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "KNOWLEDGE-82078551",
+      "title": "Selective curriculum recommendations for review",
+      "text": "User requested consolidating the PDF recommendations with starter files. CURRICULUM_RECOMMENDATIONS.md documents source pages, learning exercises, deferrals and a weekly overlay. README and START_HERE link the combined review. Draft AC-5 explicitly covers policy overrides; AC-7 requires comparable template/SLM development evidence when runnable. No human approval or implementation is claimed.",
+      "source": "CURRICULUM_RECOMMENDATIONS.md; user request 2026-10-11",
+      "tags": [],
+      "recorded_at": "2026-10-11T02:51:36.341Z",
+      "paths": [],
+      "status": "superseded",
+      "superseded_by": "KNOWLEDGE-30e3cb0d"
+    },
+    {
+      "id": "KNOWLEDGE-30e3cb0d",
+      "title": "Research protocol replaces curriculum review",
+      "text": "User requested a job-portfolio research framing with technical depth preserved. README now leads with the CPU policy-constrained generation research question. RESEARCH_PROTOCOL.md replaces CURRICULUM_RECOMMENDATIONS.md and retains source attribution, mechanistic checks and deferrals while defining paired template/SLM comparisons, annotation rubric, uncertainty and validity limits. SPEC adds AC-9; START_HERE becomes a research execution plan. Checks passed: 22 specification requirements, local Markdown links, 20 unchanged unreviewed/ineligible scenarios. No results, novelty, approvals or implementation are claimed.",
+      "source": "User request 2026-10-11; README.md; RESEARCH_PROTOCOL.md; SPEC.md; START_HERE.md",
+      "tags": [],
+      "recorded_at": "2026-10-11T02:56:17.092Z",
+      "paths": [],
+      "supersedes": "KNOWLEDGE-82078551"
+    },
+    {
+      "id": "KNOWLEDGE-89f2398e",
+      "title": "Plain-language research documents",
+      "text": "Rewrote README, START_HERE, SPEC, RESEARCH_PROTOCOL and DEMO_POLICY with short sentences and defined terms. Added root PLAN.md to explain the generated task plan. Preserved 22 requirement IDs, experiment controls, identifiers and scenario review status. Simplified generated next-action text through the CLI. ASD-STE100 official guidance informed the wording; full dictionary and rule compliance has not been verified. Generated workflow records retain tool-owned labels. Plan approval remains pending.",
+      "source": "User request; PLAN.md; START_HERE.md; https://www.asd-ste100.org/STE_faq.html",
+      "tags": [],
+      "recorded_at": "2026-10-11T10:24:09.816Z",
+      "paths": []
+    },
+    {
+      "id": "KNOWLEDGE-3cd1b303",
+      "title": "DATA-1 complete: scenario and review checks",
+      "text": "Implemented src/schema.py and tests/test_schema.py with the Python standard library. Twelve tests passed through the Genesis gate. All 20 source cases retain checksum 6f39e4b4fa64f580d5c1b54ffd143d171fcf3454ee4d325c8b1570b178145a20 and remain unreviewed/ineligible. Separate review events require a source hash, identity string, timezone timestamp and valid decision. Later reject/defer events revoke eligibility. Checks cannot authenticate a reviewer or establish banking correctness. Current schema intentionally accepts development synthetic proposals only; final data schemas belong to later tasks. Updated administrative status in README, PLAN and START_HERE after completion. DATA-2 is active but not implemented.",
+      "source": "src/schema.py; tests/test_schema.py; DATA-1 gate evidence",
+      "tags": [],
+      "recorded_at": "2026-10-11T11:38:14.230Z",
+      "paths": []
+    }
+  ],
+  "tasks": [
+    {
+      "id": "SPEC-1",
+      "outcome": "Produce an approved, implementation-ready product specification",
+      "state": "done",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "SPEC.md"
+      ],
+      "dependencies": [],
+      "requirements": [],
+      "gates": [
+        {
+          "id": "independent-review",
+          "command": "",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "human": "Project owner (user in this chat)",
+            "reason": "Carry forward existing reviewed-and-proceed authorization after adding the user-requested BANKING77 definition. No requirement or project scope changed. No new plan approval is claimed.",
+            "source_hash": "9889c15c9b6e97929589e61b8d494cae8a5eff797b706f7984281ee15515a188",
+            "observed_at": "2026-10-11T11:23:17.245Z"
+          },
+          "kind": "review"
+        }
+      ],
+      "next_action": "Interview the human, record durable context, and replace every placeholder in SPEC.md.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T02:01:57.932Z",
+      "updated_at": "2026-10-11T11:23:17.245Z"
+    },
+    {
+      "id": "DATA-1",
+      "outcome": "Validate immutable scenario proposals and separate review events offline; reject malformed records and unsupported eligibility claims; preserve all 20 unreviewed development proposals.",
+      "state": "done",
+      "risk": "low",
+      "owner": null,
+      "scope": [
+        "src/schema.py",
+        "tests/test_schema.py"
+      ],
+      "dependencies": [],
+      "requirements": [
+        "FR-2",
+        "FR-6",
+        "NFR-2",
+        "NFR-5",
+        "AC-2",
+        "AC-6"
+      ],
+      "inputs": [
+        "examples/starter_cases.jsonl",
+        "DEMO_POLICY.md",
+        "SPEC.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "schema-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_schema.py -v",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/DATA-1-schema-tests-af333d76-3713-44e7-a64c-aa127346ab21.json",
+            "hash": "a23e45d06d37f5bd368284780862d3989e5b33097967f6d4e40d5613c6cd61e6",
+            "source_hash": "865c7a9dfe5b83c5998adc60e6866fcd32b13bde59b380b6ed5609f65bf9b49b",
+            "config_hash": "987128ab86095dcf41125af3d074b94571cfe98333339a66fe320d184481b97d",
+            "observed_at": "2026-10-11T11:37:16.033Z"
+          }
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:34:53.870Z",
+      "updated_at": "2026-10-11T11:37:37.966Z",
+      "base_manifest": {
+        ".gitignore": "d8fdbdb83fc180fab7f41821fd02323a24fafbe05912f2d9367b93f03ca1a22f",
+        "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
+        "DEMO_POLICY.md": "b37526413efddb0c59594c8957a0f55e791a4e829e43978b82d65fc4b33000be",
+        "PLAN.md": "509bb22e38835f7590f8202a1c2d09975cefe36dec17e5faca7af0cf5429bd3b",
+        "README.md": "8c830202f01e9a671e6c9e295e46cd01b10a31423c8fa96452a9742749c2b6e7",
+        "RESEARCH_PROTOCOL.md": "6397fc1e9984ae54a1db811bc504bb4af4f0a3a1de0be494613cf699c0bd3dc9",
+        "SPEC.md": "e57f1367bcd77ac20fcdb111f759f30b399a060cd4807f9f1141da384435ad79",
+        "START_HERE.md": "6d2a002dbf36a92d082d5f96d24978130124f3f566fc674f18f76bc191f39e66",
+        "examples/starter_cases.jsonl": "ae4666a33503c6f1e3c51e812d648517c40876314352270e53a08c18214bfad7"
+      }
+    },
+    {
+      "id": "DATA-2",
+      "outcome": "Import the attributed eight-intent BANKING77 subset; preserve official partitions, source checksums and label mappings; derive validation only from train and report duplicate leakage.",
+      "state": "active",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/prepare_data.py",
+        "tests/test_prepare_data.py",
+        "data",
+        "reports/data_manifest.json"
+      ],
+      "dependencies": [
+        "DATA-1"
+      ],
+      "requirements": [
+        "FR-1",
+        "NFR-1",
+        "AC-1"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "data-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_prepare_data.py -v",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/DATA-2-data-tests-6e4c6b03-7ee8-4a59-99c7-5d921dca690a.json",
+            "hash": "ab191ef4f71221e3ebadcbfebf8f9cb3173309f24f4aa375309b3e67ef9f7e3f",
+            "source_hash": "4290a8dcd4be177a6ccb85623fabd3edbd930c42d6865240f7846e11046854ce",
+            "config_hash": "394410a24ac7ae994fec172497b2637d2ef6ee1f1051580e9dbf93ce9dc70c15",
+            "observed_at": "2026-10-11T11:45:46.146Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Obtain independent human review of data/REVIEW.md, src/prepare_data.py, tests/test_prepare_data.py and reports/data_manifest.json. All 11 automated checks passed. Do not mark the task complete until the review gate is approved.",
+      "blocker": null,
+      "notes": [
+        "Prepared 933 train, 264 validation, 320 official test and 17 excluded source-training records. Raw files are pinned and checksum-verified. Exact, normalized and token-overlap duplicates are reported. The final automated gate passed; independent-review remains pending."
+      ],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:41.729Z",
+      "updated_at": "2026-10-11T11:46:11.164Z",
+      "base_manifest": {
+        ".gitignore": "d8fdbdb83fc180fab7f41821fd02323a24fafbe05912f2d9367b93f03ca1a22f",
+        "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
+        "DEMO_POLICY.md": "b37526413efddb0c59594c8957a0f55e791a4e829e43978b82d65fc4b33000be",
+        "PLAN.md": "509bb22e38835f7590f8202a1c2d09975cefe36dec17e5faca7af0cf5429bd3b",
+        "README.md": "8c830202f01e9a671e6c9e295e46cd01b10a31423c8fa96452a9742749c2b6e7",
+        "RESEARCH_PROTOCOL.md": "6397fc1e9984ae54a1db811bc504bb4af4f0a3a1de0be494613cf699c0bd3dc9",
+        "SPEC.md": "e57f1367bcd77ac20fcdb111f759f30b399a060cd4807f9f1141da384435ad79",
+        "START_HERE.md": "6d2a002dbf36a92d082d5f96d24978130124f3f566fc674f18f76bc191f39e66",
+        "examples/starter_cases.jsonl": "ae4666a33503c6f1e3c51e812d648517c40876314352270e53a08c18214bfad7",
+        "src/schema.py": "2fabf276b7310eab3a99bbdc36649aa830a58c3463988c469cf426aa24f20a45",
+        "tests/test_schema.py": "14e04eb075b2e4006c04d411373b4a2fc27cddcbfc4ff2afda885d320a5377ae"
+      }
+    },
+    {
+      "id": "BASE-1",
+      "outcome": "Implement CPU intent classification, fictional-policy action selection, templates and conservative fallback; verify policy overrides, secret requests, unsupported operations and malformed inputs.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/baseline.py",
+        "src/policy.py",
+        "src/templates.py",
+        "tests/test_baseline.py",
+        "reports/baseline"
+      ],
+      "dependencies": [
+        "DATA-2"
+      ],
+      "requirements": [
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "NFR-3",
+        "NFR-5",
+        "AC-3",
+        "AC-5"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "baseline-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_baseline.py -v",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:42.561Z",
+      "updated_at": "2026-10-11T10:23:44.701Z"
+    },
+    {
+      "id": "EVAL-1",
+      "outcome": "Create the reviewed scenario split protocol, scoring rubric and evaluation harness; freeze case counts, family splits and targets before final testing; distinguish reference-action and end-to-end comparisons.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/evaluate.py",
+        "tests/test_evaluate.py",
+        "data/scenarios",
+        "reports/evaluation_protocol.md"
+      ],
+      "dependencies": [
+        "BASE-1"
+      ],
+      "requirements": [
+        "FR-8",
+        "AC-4",
+        "AC-8",
+        "AC-9"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "eval-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_evaluate.py -v",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:43.400Z",
+      "updated_at": "2026-10-11T10:23:45.745Z"
+    },
+    {
+      "id": "SLM-1",
+      "outcome": "Benchmark the pinned pretrained SLM on CPU and compare paired drafts against templates on at least 20 development cases; record resources, raw and post-fallback failures or a concrete feasibility blocker.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/slm.py",
+        "tests/test_slm.py",
+        "reports/slm",
+        "requirements.txt"
+      ],
+      "dependencies": [
+        "EVAL-1"
+      ],
+      "requirements": [
+        "FR-7",
+        "NFR-4",
+        "AC-7"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "slm-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_slm.py -v",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:46.103Z",
+      "updated_at": "2026-10-11T10:23:46.767Z"
+    },
+    {
+      "id": "REVIEW-1",
+      "outcome": "Implement a local review interface with immutable proposal references and separate accept/edit/reject/defer events; verify reviewer provenance and eligibility enforcement.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/review.py",
+        "tests/test_review.py"
+      ],
+      "dependencies": [
+        "SLM-1"
+      ],
+      "requirements": [
+        "FR-6",
+        "AC-6"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "review-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_review.py -v",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:46.991Z",
+      "updated_at": "2026-10-11T10:23:47.830Z"
+    },
+    {
+      "id": "REPORT-1",
+      "outcome": "Freeze experiment configuration and execute final evaluation once; publish actual denominators, paired scores, scenario-family uncertainty, coverage, failure analysis and reproduction commands with a local demonstration.",
+      "state": "queued",
+      "risk": "medium",
+      "owner": null,
+      "scope": [
+        "src/report.py",
+        "tests/test_report.py",
+        "reports/final",
+        "README.md",
+        "RESEARCH_PROTOCOL.md",
+        "START_HERE.md"
+      ],
+      "dependencies": [
+        "REVIEW-1"
+      ],
+      "requirements": [
+        "NFR-1",
+        "AC-4",
+        "AC-8",
+        "AC-9"
+      ],
+      "inputs": [
+        "SPEC.md",
+        "RESEARCH_PROTOCOL.md"
+      ],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "report-tests",
+          "kind": "command",
+          "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_report.py -v",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "After plan approval, complete this task as described in PLAN.md. Run its required checks. Record results and required human review.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-11T09:35:47.819Z",
+      "updated_at": "2026-10-11T10:23:48.952Z"
+    }
+  ],
+  "learning_proposals": [],
+  "cleanup_proposals": [],
+  "controls": [],
+  "attempts": [
+    {
+      "id": "af333d76-3713-44e7-a64c-aa127346ab21",
+      "task": "DATA-1",
+      "kind": "gate",
+      "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_schema.py -v",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 2296,
+      "child_pid": 2212,
+      "started_at": "2026-10-11T11:37:13.081Z",
+      "status": "passed",
+      "before_hash": "865c7a9dfe5b83c5998adc60e6866fcd32b13bde59b380b6ed5609f65bf9b49b",
+      "config_hash": "987128ab86095dcf41125af3d074b94571cfe98333339a66fe320d184481b97d",
+      "environment": {
+        "node": "v20.19.4",
+        "platform": "win32",
+        "arch": "x64",
+        "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-11T11:37:16.033Z"
+    },
+    {
+      "id": "0ae3f973-6449-4e88-935b-47e4621f1429",
+      "task": "DATA-2",
+      "kind": "gate",
+      "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_prepare_data.py -v",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 8744,
+      "child_pid": 6420,
+      "started_at": "2026-10-11T11:44:05.466Z",
+      "status": "passed",
+      "before_hash": "ff875966a1e283d48dada0cb1474f1165c59727b2000779582370b941c3211f6",
+      "config_hash": "394410a24ac7ae994fec172497b2637d2ef6ee1f1051580e9dbf93ce9dc70c15",
+      "environment": {
+        "node": "v20.19.4",
+        "platform": "win32",
+        "arch": "x64",
+        "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-11T11:44:26.734Z"
+    },
+    {
+      "id": "6e4c6b03-7ee8-4a59-99c7-5d921dca690a",
+      "task": "DATA-2",
+      "kind": "gate",
+      "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_prepare_data.py -v",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 36148,
+      "child_pid": 35520,
+      "started_at": "2026-10-11T11:45:26.290Z",
+      "status": "passed",
+      "before_hash": "4290a8dcd4be177a6ccb85623fabd3edbd930c42d6865240f7846e11046854ce",
+      "config_hash": "394410a24ac7ae994fec172497b2637d2ef6ee1f1051580e9dbf93ce9dc70c15",
+      "environment": {
+        "node": "v20.19.4",
+        "platform": "win32",
+        "arch": "x64",
+        "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-11T11:45:46.146Z"
+    }
+  ],
+  "authorizations": [],
+  "experiments": [],
+  "incidents": [],
+  "discovery": null,
+  "checkpoint": {
+    "at": "2026-10-11T11:46:13.534Z",
+    "revision": {
+      "commit": null,
+      "dirty": null,
+      "source_hash": "4290a8dcd4be177a6ccb85623fabd3edbd930c42d6865240f7846e11046854ce"
+    },
+    "active_task": "DATA-2",
+    "next_action": "Obtain independent human review of data/REVIEW.md, src/prepare_data.py, tests/test_prepare_data.py and reports/data_manifest.json. All 11 automated checks passed. Do not mark the task complete until the review gate is approved."
+  },
+  "legacy": null
+}

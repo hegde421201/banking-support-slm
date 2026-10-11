@@ -1,0 +1,10 @@
+{
+  "changes": "Selected eight categories; derived validation groups from official train; excluded train/test overlaps from development use. Original text and labels retained.",
+  "citation": "Casanueva, Temcinas, Gerz, Henderson and Vulic (2020). Efficient Intent Detection with Dual Sentence Encoders.",
+  "dataset": "BANKING77",
+  "license": "CC BY 4.0",
+  "paper": "https://arxiv.org/abs/2003.04807",
+  "publisher": "PolyAI",
+  "repository": "https://github.com/PolyAI-LDN/task-specific-datasets",
+  "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b"
+}

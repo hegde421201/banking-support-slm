@@ -1,0 +1,126 @@
+{
+  "artifacts": {
+    "data/README.md": "01a56ca3faa228cdcfe480e2108eab4a441272f949ecc4f5431c2805af367fea",
+    "data/processed/banking77_v1/ATTRIBUTION.json": "91ba6d810a82e04f487ba8a4acce653eea8fde184c27cbd24d64fdf03fd2ff2b",
+    "data/processed/banking77_v1/LICENSE": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+    "data/processed/banking77_v1/duplicate_report.json": "cd265d6e00ade90afa13b225b3b3fa33cf7f49a82e88ffbc26057290c9411d49",
+    "data/processed/banking77_v1/excluded.jsonl": "c21618d602a05fba2b755f090b501c43032a2094d89750a29a91261bc82f64eb",
+    "data/processed/banking77_v1/label_mapping.json": "b740903b93e80ffc06effe95c9e549d91c0fca3de8d3c7415823d353db29e53b",
+    "data/processed/banking77_v1/test.jsonl": "cbaee3d7f8c2ae5b43f7e068bca69c22dc742c7ed7db58898e08d8f9efe2e06c",
+    "data/processed/banking77_v1/train.jsonl": "aebbe4bfdb90653826e7ec08799a5052a5a8c52873863e6524e6f06c00250ca1",
+    "data/processed/banking77_v1/validation.jsonl": "55ab7d0a7200b170e02b16f32121435ac9f8b4a03db3c0cee5eb4ea09e1fd85c"
+  },
+  "attribution": {
+    "changes": "Selected eight categories; derived validation groups from official train; excluded train/test overlaps from development use. Original text and labels retained.",
+    "citation": "Casanueva, Temcinas, Gerz, Henderson and Vulic (2020). Efficient Intent Detection with Dual Sentence Encoders.",
+    "dataset": "BANKING77",
+    "license": "CC BY 4.0",
+    "paper": "https://arxiv.org/abs/2003.04807",
+    "publisher": "PolyAI",
+    "repository": "https://github.com/PolyAI-LDN/task-specific-datasets",
+    "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b"
+  },
+  "code": {
+    "git_revision": null,
+    "note": "No commit exists yet; script checksum records the implementation used.",
+    "prepare_data_sha256": "fdcb58f5ca4e6d284513c43eeb486eee6db14c4944a77ac233db1ab9e5f0bd36"
+  },
+  "counts": {
+    "excluded": 17,
+    "test": 320,
+    "train": 933,
+    "validation": 264
+  },
+  "duplicate_summary": {
+    "clusters": 28,
+    "excluded_train_count": 17,
+    "pairs": 39
+  },
+  "environment": {
+    "dependencies": "Python standard library only",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.0"
+  },
+  "official_counts": {
+    "test": 3080,
+    "train": 10003
+  },
+  "per_label": {
+    "excluded": {
+      "activate_my_card": 4,
+      "card_arrival": 1,
+      "card_not_working": 1,
+      "card_payment_not_recognised": 1,
+      "failed_transfer": 2,
+      "pending_transfer": 4,
+      "transaction_charged_twice": 4
+    },
+    "test": {
+      "Refund_not_showing_up": 40,
+      "activate_my_card": 40,
+      "card_arrival": 40,
+      "card_not_working": 40,
+      "card_payment_not_recognised": 40,
+      "failed_transfer": 40,
+      "pending_transfer": 40,
+      "transaction_charged_twice": 40
+    },
+    "train": {
+      "Refund_not_showing_up": 130,
+      "activate_my_card": 119,
+      "card_arrival": 122,
+      "card_not_working": 81,
+      "card_payment_not_recognised": 128,
+      "failed_transfer": 100,
+      "pending_transfer": 120,
+      "transaction_charged_twice": 133
+    },
+    "validation": {
+      "Refund_not_showing_up": 32,
+      "activate_my_card": 36,
+      "card_arrival": 30,
+      "card_not_working": 30,
+      "card_payment_not_recognised": 39,
+      "failed_transfer": 35,
+      "pending_transfer": 24,
+      "transaction_charged_twice": 38
+    }
+  },
+  "selected_labels": [
+    "card_arrival",
+    "activate_my_card",
+    "card_not_working",
+    "pending_transfer",
+    "failed_transfer",
+    "Refund_not_showing_up",
+    "transaction_charged_twice",
+    "card_payment_not_recognised"
+  ],
+  "source_files": {
+    "LICENSE": {
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/LICENSE"
+    },
+    "README.md": {
+      "sha256": "7b9ce9069931cc2de89dce8c7ffb53d07806cf413601ccf133b9af5227b3a373",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/README.md"
+    },
+    "categories.json": {
+      "sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/categories.json"
+    },
+    "test.csv": {
+      "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/test.csv"
+    },
+    "train.csv": {
+      "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/train.csv"
+    }
+  },
+  "split_rule": {
+    "algorithm": "SHA256(seed:component-ID) / 2^256 < 0.2; group IDs hash sorted source IDs",
+    "seed": "20261011",
+    "validation_fraction_target": 0.2
+  }
+}

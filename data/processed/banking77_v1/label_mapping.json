@@ -1,0 +1,10 @@
+{
+  "Refund_not_showing_up": 5,
+  "activate_my_card": 1,
+  "card_arrival": 0,
+  "card_not_working": 2,
+  "card_payment_not_recognised": 7,
+  "failed_transfer": 4,
+  "pending_transfer": 3,
+  "transaction_charged_twice": 6
+}

@@ -1,0 +1,784 @@
+{
+  "clusters": [
+    {
+      "group": "026555413a3cb087808ccccf350a7fc1b0b31848013bf4cf6ee39abb4768fa09",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2299:995bb797fc6d",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:7532:a686b929cf7b"
+      ],
+      "labels": [
+        "failed_transfer"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "078f59c9ef6849bce819753d65e8a45124d5a9bbd62352dc73183c65ec1d8021",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6348:4385bfacee3e",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6458:7765e95e30dc"
+      ],
+      "labels": [
+        "transaction_charged_twice"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "09326c2e576fc61eb1f3c508d284e5318360d36c136ba0e8d735459c8d51dcf1",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:81:7963bf3e9892",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:98:a28e6696c82e"
+      ],
+      "labels": [
+        "card_arrival"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "26c560c3337ab48ab3744a978fb51e82c474d56fb0f54c646cc3fd84e3083272",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6085:cbfb4ed51dcf",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6136:b3a90c6fa5a1"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "363e6442f4a54422a0b8323911622e4ba1befa861879666df1874afcba8967c1",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6010:6d46f9790e40",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6049:25ab2f226057"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "3a3ee58b7f5af8f01e7ece259f71b38719680c7a093391928feec049dee6037a",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2292:a30be81aa578",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:7522:ddf4eb17219d"
+      ],
+      "labels": [
+        "failed_transfer"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "407e16ffc6203037aa9ea199c771af73dd80a73645473c105b4cafc60ba5579e",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2845:2dec9417b819",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9227:f684b17cde86",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9262:eb97cf4a55c2"
+      ],
+      "labels": [
+        "activate_my_card"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "408135261a54472cb61ddc9550985810adfbe5fcc0965be3c3bdfee8e56a7bbd",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9271:a18ca5fe0e90",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9293:95bae51219bf"
+      ],
+      "labels": [
+        "activate_my_card"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "4192f646eb5c26deb91bfd0322f3789c617e99243a59c992f98744d98002ac85",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9197:b4f806a6e084",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9309:701d93976ff9"
+      ],
+      "labels": [
+        "activate_my_card"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "422254bc5430391d6a4c778f8bbaf76ba1e598ba89c1492930c1c9685d0229b2",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1873:f5a2aed73bae",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6012:a1c1c27b3575"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "4c576e4e87eb98337e1bb04a33ee20081ea0ca9f054b4f1cec8d7fec2e0b2f63",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1877:1c0f6fb4b7e5",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6048:828d671cea53",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6066:c37b442c5593"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "58c4e3c28900ac58aa983abb20143ef28c14f4e9cf8208a4a995269f8bc94c6a",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1880:d211318dc1af",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5996:45d36e5337f9"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "668615473859ee2b7a4dd44d2ccbfb46e720e793db647056a96961fa63dd3fed",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:34:41451be92a01",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:142:3cbe85858c5e"
+      ],
+      "labels": [
+        "card_arrival"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "6c98c2df9c1768f9bd87d885fbd0ffa62e43a09a2fdc417c7a7ed68719a20702",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:117:a94010ab92a4",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:27:f65b1f1fdcbc"
+      ],
+      "labels": [
+        "card_arrival"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "6ec52812dd4fdbddd19f592fe19373b104ee6ff3a87824d5cc2438078bda1c38",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1990:cc5adb20381c",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6325:95dbd6413dc8"
+      ],
+      "labels": [
+        "transaction_charged_twice"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "7a6dc99df04234adcad8908ac68efb6f5b0fdd3bf7a4a179135472b1b6080c4e",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6320:2a5caa01f934",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6454:e1407359ea23"
+      ],
+      "labels": [
+        "transaction_charged_twice"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "a0f138f3e018b8df5199f193fbb82ec19a4cf14a7f795400740ce2fbf12559f1",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6060:2a9719a6b404",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6095:91589ce3af27"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "a3f3a12838888c679c0367d7b28590406bb2c902100540277fd5b33bf663915c",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1994:ab62d5d2b84b",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6352:a2d57d90ca49",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6417:3c0406e123d2",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6461:a4e240adfe88"
+      ],
+      "labels": [
+        "transaction_charged_twice"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "a65747ca1a69e43740a32d0b859918719d9af78d1919cd7c80573348b9370417",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1109:596ca371e1c5",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3551:d8c21ed52d1d"
+      ],
+      "labels": [
+        "card_payment_not_recognised"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "abc1096e76fd7d5c1c267d9085bf8bd7bed3034720f8db650d3844fbc79bd5d8",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3491:ae26e8768b18",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3500:2562c9e28bd4"
+      ],
+      "labels": [
+        "card_payment_not_recognised"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "b2b6ddf699456997b88c8aef04fa834fe174c0a9fc5253cb7c99887d7198279e",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6019:3b77491453e5",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6127:61802658716a"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "c6b7fcc24a86a78bd1b430b114a5e04a465f78009f67f139a9c3e6e458e4662b",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6018:59a36f13870c",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6032:bedfa911e4ef",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6059:b89a1f08f191"
+      ],
+      "labels": [
+        "pending_transfer"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "cc5fa67ec840613a406c0c64b6390f5b24874f8f4759395f6e9790ac2f853b65",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:45:5f926ebb724a",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:89:b6bdf8a2bf9a"
+      ],
+      "labels": [
+        "card_arrival"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "eae0bf117e3d12d4bbac42f5ac8e31db317f053a7e4b7359e7ee3bb6add5d5fe",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2879:4967770c9c65",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9192:16c67e52f685",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9204:9229267490bf"
+      ],
+      "labels": [
+        "activate_my_card"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "eae97567b9c3225c3e00c4d3c65aad6844eb8e0fe6417dace363a998eb2a3ead",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5692:6cccce2e3866",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5785:15f67b2463ec",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5801:0be465684ae0"
+      ],
+      "labels": [
+        "Refund_not_showing_up"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "eeceb924185276abb86a5b1c8ece891e7649e5bfbb54f0d085128f6d881e2702",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:382:7b6a983a5ad3",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1334:c65453046be1"
+      ],
+      "labels": [
+        "card_not_working"
+      ],
+      "source_splits": [
+        "test",
+        "train"
+      ]
+    },
+    {
+      "group": "f16c2660802ee45db9c2bebe0a3082cd545b93096d5dddd037b2ef4b293cfb7e",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9223:d74b247324ca",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9232:512fcf8226fc"
+      ],
+      "labels": [
+        "activate_my_card"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    },
+    {
+      "group": "fe9064deca8f20b267b57452ff6b804562c6455c02e1a3d46429a61168e62c21",
+      "ids": [
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1247:b0c0e8b448ef",
+        "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1291:21a00d5b8add"
+      ],
+      "labels": [
+        "card_not_working"
+      ],
+      "source_splits": [
+        "train"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:45:5f926ebb724a",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:89:b6bdf8a2bf9a",
+      "token_jaccard": 0.923077
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:81:7963bf3e9892",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:98:a28e6696c82e",
+      "token_jaccard": 0.909091
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:27:f65b1f1fdcbc",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:117:a94010ab92a4",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "normalized",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1247:b0c0e8b448ef",
+      "output_splits": [
+        "validation",
+        "validation"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1291:21a00d5b8add",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3491:ae26e8768b18",
+      "output_splits": [
+        "validation",
+        "validation"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3500:2562c9e28bd4",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5692:6cccce2e3866",
+      "output_splits": [
+        "validation",
+        "validation"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5785:15f67b2463ec",
+      "token_jaccard": 0.944444
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5785:15f67b2463ec",
+      "output_splits": [
+        "validation",
+        "validation"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5801:0be465684ae0",
+      "token_jaccard": 0.918919
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6018:59a36f13870c",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6032:bedfa911e4ef",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6010:6d46f9790e40",
+      "output_splits": [
+        "validation",
+        "validation"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6049:25ab2f226057",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6018:59a36f13870c",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6059:b89a1f08f191",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6032:bedfa911e4ef",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6059:b89a1f08f191",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6048:828d671cea53",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6066:c37b442c5593",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6060:2a9719a6b404",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6095:91589ce3af27",
+      "token_jaccard": 0.964286
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6019:3b77491453e5",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6127:61802658716a",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6085:cbfb4ed51dcf",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6136:b3a90c6fa5a1",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6352:a2d57d90ca49",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6417:3c0406e123d2",
+      "token_jaccard": 0.97619
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6320:2a5caa01f934",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6454:e1407359ea23",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6348:4385bfacee3e",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6458:7765e95e30dc",
+      "token_jaccard": 0.955556
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6352:a2d57d90ca49",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6461:a4e240adfe88",
+      "token_jaccard": 0.97619
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6417:3c0406e123d2",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6461:a4e240adfe88",
+      "token_jaccard": 0.952381
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9192:16c67e52f685",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9204:9229267490bf",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9223:d74b247324ca",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9232:512fcf8226fc",
+      "token_jaccard": 0.909091
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9227:f684b17cde86",
+      "output_splits": [
+        "excluded",
+        "excluded"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9262:eb97cf4a55c2",
+      "token_jaccard": 0.916667
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9271:a18ca5fe0e90",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9293:95bae51219bf",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9197:b4f806a6e084",
+      "output_splits": [
+        "train",
+        "train"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9309:701d93976ff9",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:142:3cbe85858c5e",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:34:41451be92a01",
+      "token_jaccard": 0.909091
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:1334:c65453046be1",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:382:7b6a983a5ad3",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:3551:d8c21ed52d1d",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1109:596ca371e1c5",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6012:a1c1c27b3575",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1873:f5a2aed73bae",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6066:c37b442c5593",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1877:1c0f6fb4b7e5",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:5996:45d36e5337f9",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1880:d211318dc1af",
+      "token_jaccard": 0.916667
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6325:95dbd6413dc8",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1990:cc5adb20381c",
+      "token_jaccard": 0.9
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6352:a2d57d90ca49",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1994:ab62d5d2b84b",
+      "token_jaccard": 0.952381
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6417:3c0406e123d2",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1994:ab62d5d2b84b",
+      "token_jaccard": 0.928571
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:6461:a4e240adfe88",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:1994:ab62d5d2b84b",
+      "token_jaccard": 0.928571
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:7522:ddf4eb17219d",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2292:a30be81aa578",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "normalized",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:7532:a686b929cf7b",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2299:995bb797fc6d",
+      "token_jaccard": 1.0
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9262:eb97cf4a55c2",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2845:2dec9417b819",
+      "token_jaccard": 0.909091
+    },
+    {
+      "kind": "near",
+      "left": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:train:9192:16c67e52f685",
+      "output_splits": [
+        "excluded",
+        "test"
+      ],
+      "right": "banking77:57ec275d8078af65b7731c2a98be812d844a6d6b:test:2879:4967770c9c65",
+      "token_jaccard": 0.9
+    }
+  ],
+  "excluded_train_count": 17,
+  "limitation": "Lexical screening can miss paraphrases and flag distinct questions. No semantic-duplicate claim. Threshold fixed before inspection; no label-based threshold tuning.",
+  "method": "NFKC + casefold + word tokens; exact/normalized matches or token-set Jaccard >= 0.9; connected components",
+  "policy": "Preserve official test records; exclude overlapping official-train groups; assign remaining groups together.",
+  "threshold": 0.9
+}

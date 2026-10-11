@@ -1,0 +1,30 @@
+{
+  "task": "DATA-2",
+  "gate": "data-tests",
+  "kind": "command",
+  "attempt": "6e4c6b03-7ee8-4a59-99c7-5d921dca690a",
+  "command": "C:/Python312/python.exe -m unittest discover -s tests -p test_prepare_data.py -v",
+  "started_at": "2026-10-11T11:45:26.290Z",
+  "observed_at": "2026-10-11T11:45:46.146Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "",
+  "stderr": "test_all_eight_labels_and_no_id_or_group_leakage (test_prepare_data.DataTests.test_all_eight_labels_and_no_id_or_group_leakage) ... ok\r\ntest_assignments_do_not_depend_on_input_order (test_prepare_data.DataTests.test_assignments_do_not_depend_on_input_order) ... ok\r\ntest_bad_csv_and_missing_label_are_rejected (test_prepare_data.DataTests.test_bad_csv_and_missing_label_are_rejected) ... ok\r\ntest_corrupt_or_missing_source_fails_closed (test_prepare_data.DataTests.test_corrupt_or_missing_source_fails_closed) ... ok\r\ntest_csv_quoted_multiline_text_is_preserved (test_prepare_data.DataTests.test_csv_quoted_multiline_text_is_preserved) ... ok\r\ntest_exact_normalized_and_transitive_near_matches (test_prepare_data.DataTests.test_exact_normalized_and_transitive_near_matches) ... ok\r\ntest_license_and_attribution_are_present (test_prepare_data.DataTests.test_license_and_attribution_are_present) ... ok\r\ntest_offline_rerun_is_byte_identical (test_prepare_data.DataTests.test_offline_rerun_is_byte_identical) ... ok\r\ntest_saved_artifacts_match_recomputed_data (test_prepare_data.DataTests.test_saved_artifacts_match_recomputed_data) ... ok\r\ntest_selected_rows_preserve_text_labels_and_official_test (test_prepare_data.DataTests.test_selected_rows_preserve_text_labels_and_official_test) ... ok\r\ntest_sources_match_pinned_checksums (test_prepare_data.DataTests.test_sources_match_pinned_checksums) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 11 tests in 17.244s\r\n\r\nOK\r\n",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": null,
+    "dirty": null
+  },
+  "source_hash": "4290a8dcd4be177a6ccb85623fabd3edbd930c42d6865240f7846e11046854ce",
+  "before_hash": "4290a8dcd4be177a6ccb85623fabd3edbd930c42d6865240f7846e11046854ce",
+  "config_hash": "394410a24ac7ae994fec172497b2637d2ef6ee1f1051580e9dbf93ce9dc70c15",
+  "environment": {
+    "node": "v20.19.4",
+    "platform": "win32",
+    "arch": "x64",
+    "verifier": "cbdddbf25e5ed5f3406b93881ae54f64d11a8c54f0bfe177d19d9d9946a6a971",
+    "variables": {}
+  },
+  "hash": "ab191ef4f71221e3ebadcbfebf8f9cb3173309f24f4aa375309b3e67ef9f7e3f"
+}
