@@ -68,7 +68,7 @@ A bias adds a constant value.
 
 ### 4. Summation notation
 
-Summation notation gives us a short way to write repeated multiplication and addition.
+Summation notation means add the specified terms. In this classifier, each term is a weight multiplied by a feature.
 
 ```math
 \sum_{i=1}^{3}a_i=a_1+a_2+a_3
@@ -181,7 +181,7 @@ The Card Delivery score is **7**.
 
 Customer message:
 
-"Activate my debit card."
+"activate my debit card."
 
 Feature values:
 
@@ -214,7 +214,7 @@ The word-presence features also do not fully represent sentence meaning or negat
 ### What I learned
 
 1. A scoring function can use multiple input features.
-2. Summation notation represents repeated multiplication and addition.
+2. Summation notation means add the specified terms. In this classifier, each term is a weight multiplied by a feature.
 3. We can use the same scoring function for different messages.
 4. Different feature values can produce different scores.
 5. A classification score is not the same as a probability.
@@ -260,7 +260,16 @@ MATH-01 provides the algebra needed to understand the classifier. It does not ye
 
 - Code: Not implemented as part of this mathematics lesson.
 - Test or result: Manual calculations completed during the learning session. No automated test was executed for MATH-01.
-- Related requirement or research question: Banking intent classification and the comparison of template-based and SLM-based reply generation. Add the exact requirement ID after verifying it in the project documentation.
+- Related project requirements in [SPEC.md](../SPEC.md):
+  - **FR-3:** Train a classifier on CPU. The weighted score in this note introduces the mathematics for that classifier.
+  - **FR-7:** Compare template replies with SLM replies. This note explains why reply generation is separate from classification.
+- Related research questions in [RESEARCH_PROTOCOL.md](../RESEARCH_PROTOCOL.md):
+  - **RQ1:** How accurately does the classifier identify the eight request types?
+  - **RQ2:** How do SLM replies compare with template replies when the action and policy are fixed?
+
+FR means functional requirement: something the system must do.
+RQ means research question: something the experiments must answer.
+These references connect this lesson to the project. They do not mean that training or evaluation is complete.
 
 ## Checks I completed
 
