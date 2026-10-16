@@ -2,12 +2,10 @@
 
 Note ID: MATH-03
 Tags: math, probability
-Status: Not started
-Written by: [Your name]
-Last updated: [Date]
+Status: In progress
+Written by: Ganesh Rama Hegde
+Last updated: 17-Oct-2026
 Suggested time: Week 1, Day 3: logarithms, exponentials, and probability; 4-5 hours
-
-This is a writing template. The prompts are not evidence of completed work.
 
 ## Topics to cover
 
