@@ -36,6 +36,35 @@ outputs and task performance.
 15. SLM Proposal and Research Hypothesis: What will you build, and what measurable hypothesis do you intend to test?
 
 - specify tasks 
+- capabilities
+- inputs
+- outputs
+- operating environment
+- limits
+- specialization
+State a falsifiable hypothesis against the strongest relevant baseline and what result would disprove it.
+
+16. What is your proposed model-development strategy?
+- outline data preparation
+- supervised fine-tuning
+- synthetic data
+- preference optimization
+- distillation
+- evaluation
+- and deployment where relevant
+Justify selected techniques
+
+17. Compute and Data Requirements: Which base model, compute resources, and datasets will you need? How will you access the data?
+- specify model family and size
+- gpu needs
+- training and inference requirements
+- timeline
+- existing resources
+- assumptions
+- describe training/evaluation data sources, volume, formats,quality,access permissions
+- privacy,confidentiality, licensing, PII handling 
+- access risks
+
 
 Links
 
