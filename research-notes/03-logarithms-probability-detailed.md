@@ -7,8 +7,6 @@
 **Last updated:** 17-Oct-2026  
 **Suggested time:** Week 1, Day 3 (original curriculum: 4–5 hours; actual study may take longer)
 
-> **Scope and provenance.** This is an expanded teaching document based on our MATH-03 conversation, not a record of executed model experiments. Every dataset, intent count, classifier score, and probability in the worked examples is **illustrative**. The exercises and answers reflect the learning conversation. Mathematical explanations and additional clarifications were drafted with AI assistance and should be reviewed in the author's own words.
-
 ## Topics to cover
 
 - [x] Lesson 1 — Powers and exponents
