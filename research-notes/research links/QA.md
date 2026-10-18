@@ -1339,13 +1339,105 @@ We will report negative results and limitations.
 Our measure of progress will be completed and reviewable technical evidence, not the number of meetings, commits, or claims about model performance.
 
 SECTION 6: Support Requirements and Funding
-26. Resource Requirements and Budget: What support do you need from SBL, and what is your estimated project budget?
+## 26. Resource Requirements and Budget: What support do you need from SBL, and what is your estimated project budget?
 
 - Itemize compute,APIs,subscriptions,datasets,annotation,feedback,mentorship and publication 
 support
 - explain each resource's purpose,cost estimate,assumptions and resources you can contribute
 
-27. What level of financial support are you seeking?
+### Answer
+
+Our Banking Support SLM project is designed to use limited computing resources.
+
+We plan to use our existing personal computers for data preparation, Python development, architecture research, documentation, and evaluation scripts.
+
+We do not plan to purchase dedicated GPU hardware for the initial ten-week project.
+
+Our main resource requirements are as follows.
+
+1. Model Training
+
+We plan to fine-tune a small Qwen model using LoRA on Tinker.
+
+We require access to a supported Qwen model, the Tinker training service, and sufficient training credits for at least one completed experiment.
+
+We will confirm the supported model, pricing, and expected token usage before training.
+
+We will perform a dry run and set a spending limit before starting the full experiment.
+
+If additional experiments are too expensive, we will prioritize one reproducible training run and its evaluation.
+
+2. Dataset Development
+
+We will create at least 100 human-reviewed examples using fictional banking policies and simulated customer information.
+
+The main resource requirement is team time for scenario preparation, annotation, review, and correction.
+
+We do not plan to purchase real banking customer data.
+
+We will use public datasets, such as BANKING77, only for suitable tasks and subject to their licensing conditions.
+
+Our policy-guided action-selection dataset will be created separately.
+
+3. Model Evaluation
+
+We will evaluate the traditional ML baseline, prompted Qwen, a frontier model, and fine-tuned Qwen.
+
+We may require limited paid API access for frontier model evaluation.
+
+We will use the same evaluation cases and scoring rules for the relevant models.
+
+We will record token usage, API charges, and evaluation costs.
+
+We will avoid unnecessary repeated API calls.
+
+4. Research and Documentation
+
+We will use Python, GitLab, LaTeX, Mermaid, and Manim for development and documentation.
+
+We expect to use free or existing tools wherever possible.
+
+We will prepare the architecture paper, LoRA video, training pipeline, dataset documentation, and evaluation report using these tools.
+
+5. Proposed Budget
+
+We propose an initial research budget ceiling of USD 200, subject to confirmation of service pricing and team approval.
+
+This is a planning limit, not a verified cost quotation.
+
+Our provisional allocation is:
+
+Tinker training and experiments: USD 100.
+
+Frontier model API evaluation: USD 50.
+
+Contingency for additional experiments or unexpected service costs: USD 50.
+
+We will revise this allocation after confirming the model, training requirements, and available credits.
+
+The estimate excludes the value of team members' time and assumes that existing computers and free development tools are sufficient.
+
+6. Support Requested from SBL
+
+We would value technical guidance on selecting a suitable Qwen model, designing the LoRA experiment, reviewing the evaluation method, and interpreting negative results.
+
+Access to training credits would be useful but is not a condition for designing the research.
+
+If training credits are unavailable, we will assess the cost and feasibility before committing to a paid run.
+
+We will not assume that SBL or Antern will provide funding unless it is explicitly confirmed.
+
+7. Cost Control and Reporting
+
+We will record estimated costs before each paid experiment and actual costs afterward.
+
+We will maintain a spending log with the experiment identifier, service used, token usage where available, and cost.
+
+We will stop or revise an experiment if it exceeds the approved budget.
+
+Our objective is to produce a reproducible research result at a controlled cost, not to maximize model size or computing expenditure.
+
+## 27. What level of financial support are you seeking?
 (Pick one choice)
 
 Funding and compensation are not guaranteed. Any arrangement will depend on project approval, scope, progress, available resources, and mutually agreed terms.
@@ -1355,14 +1447,32 @@ Funding and compensation are not guaranteed. Any arrangement will depend on proj
 - I am open to discussing the structure based on project scope and demonstrated progress.
 
 SECTION 7: Final Proposal and Commitment
-29. Final Research Pitch: Summarize your proposal, its strongest evidence, and why your team deserves selection
+## 29. Final Research Pitch: Summarize your proposal, its strongest evidence, and why your team deserves selection
 -in 250-400 words,cover problem,users,demand,SLM,hypothesis,differentiation
 -evaluation,impact,and evidence of team strengths
 - avoid generic claims
+
+### Answer
+
+**Banking Support SLM: Policy-Guided Reply Assistance for Support Teams**
+
+Banking support teams handle customer questions that require accurate information, consistent policy interpretation, and clear communication. Delayed refund requests are one example. A support agent must understand the customer's problem, check the available case information, select a permitted action, and prepare an appropriate reply. Incorrect statements about refund status or completion dates can mislead customers and create operational risk.
+
+Our proposed users are banking and fintech customer-support agents and their supervisors. We believe policy-guided reply assistance is a useful research problem, but we have not yet validated customer demand through interviews or a banking pilot. Our initial research will therefore use simulated cases and a fictional banking policy.
+
+We propose to investigate whether a small Qwen language model, fine-tuned using Low-Rank Adaptation (LoRA) on Tinker, can select permitted support actions and draft policy-consistent replies more reliably than simpler alternatives. Our hypothesis is that fine-tuning will improve action-selection accuracy by at least five percentage points over the strongest relevant baseline without increasing policy violations or unsupported statements.
+
+Our differentiation is the combination of explicit policy constraints, structured action selection, human-reviewed replies, and measurable comparisons. We will not assume that fine-tuning is necessary. We will compare deterministic policy rules and reply templates, a traditional machine-learning baseline, prompted Qwen, a frontier model, and fine-tuned Qwen.
+
+During the proposed ten-week project, we will prepare at least 100 human-reviewed examples, build a reproducible training and evaluation pipeline, and publish an evaluation report. We will measure action-selection accuracy, policy compliance, unsupported claims, reply quality, review time, and available inference costs. We will report negative results and analyze model failures.
+
+Our four-person team combines over 14 years of production mobile engineering experience, BFSI software development experience, and two developers developing their Python and AI engineering skills. We will use GitLab, peer review, and documented experiments to maintain accountability.
+
+The expected outcome is a reproducible research prototype, benchmark dataset, technical reports, and working demonstration. If the results are promising, we will explore a supervised pilot with an interested financial institution. We will not claim production readiness without further validation.
 
 30. Share supporting links
 - Include repositories
 - papers,blogs,prototypes,demos,benchmarks,market research and a brief explanation of relevance
 
-
+### Answer
 
