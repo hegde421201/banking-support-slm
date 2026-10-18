@@ -127,3 +127,50 @@ These checks supplement the original notes above. The original links and summari
 - Qwen fine-tuning on Tinker is a proposed course extension. It is not a completed experiment or part of the currently approved CPU comparison.
 - India-specific UPI scenarios and real regulatory policies would expand the current study. They are possible future work, not existing deliverables.
 - Drafting assistance: Codex,ChatGPT. Research links and initial source summaries were provided by the project lead.
+
+
+---
+
+Rishik Kumar Balanagu
+-------------------
+
+Repos:
+Memory-Ops: https://github.com/rishibalanagu0108/Memory-OPS
+Invoice Risk Check: https://github.com/rishibalanagu0108/Invoice_Risk_Check_Agent
+
+Opensource contributions:
+https://github.com/supermemoryai/supermemory/pull/1816
+https://github.com/supermemoryai/supermemory/pull/1815
+https://github.com/neatlogs/neatlogs/pull/219
+
+Rishik has previous working experience on building the Full-stack Systems (Javascript, Python) of 2 years, and right now he is building many AI Systems and also trying to understand the finetuning concepts by understanding and making them work at production level.
+
+------
+
+Sarfaraj Ejaj
+
+He is a full stack Java/Angular developer with 10 years of experience.
+In the BFSI (Banking,Financial Service,Insurance) domain, he has 7+ years experience in banking.
+He has also developed GenAI applications, specifically chatbot and worked on apps using OpenAI, RAG,Langchain,langraph etc.
+
+git - https://github.com/sarfaraj-ejaj
+
+---
+
+Shriyansh Sinha 
+
+He is a IIT Patna B.Tech 2025 graduate. 
+He has around 2 years of experience working as a software engineer in a product based company - Juspay where he has experience taking lead and innovating solutions for the ever changing and frontier tech ask of a startup culture. 
+
+These are some of the projects he has recently done - 
+
+1. Data Quality pipeline triage classifier - https://github.com/Shriyansh-20/AI-Native-Learning/tree/main/week1/deliverables/student-project
+2. Ask-My-Doc a RAG based product that'll help anyone with their documents -  https://github.com/Shriyansh-20/Domain-Specific-Ask-my-DOC-System
+3. Autodeploy - A deployment web-app for deploying your local projects to cloud for public usage - https://github.com/Shriyansh-20/AutoDeploy
+
+
+Research Paper - HyDeML: Hybrid Mode Decomposition-based Machine Learning Framework for Bus Arrival PredictionHe has also published a research paper on Travel Time Predictions and benchmarking various Mode Decomposition techniques for this scenario. His paper was accepted in the 2026 TRB research conference, Washington D.C.
+
+https://drive.google.com/file/d/13xrBczK6WbtdzdyFoecn3Fs5-uguLXc9/view?usp=sharing
+
+---

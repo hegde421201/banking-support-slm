@@ -880,7 +880,7 @@ We will report negative results as part of our research.
 Our goal is not to prove that an SLM is always the correct solution. Our goal is to identify which banking-support tasks benefit from specialization and which tasks are better handled by conventional software.
 
 SECTION 5: Execution Plan and Team Leadership
-22. Provide a proposed 8–12 week execution plan
+## 22. Provide a proposed 8–12 week execution plan
 
 - break into milestones,validation,baselines,dataset,training,evaluation,iteration,final 
 deliverable.
@@ -910,7 +910,7 @@ Member 2, Training and Visualization Contributor: Python training support, Tinke
 
 Member 3, Data and Research Contributor: Dataset preparation, annotation records, architecture research, and documentation.
 
-Member 4: BFSI Programmer: Banking scenario design, fictional policy rules, data review, and domain-related validation.
+Member 4, BFSI Programmer: Banking scenario design, fictional policy rules, data review, and domain-related validation.
 
 
 The team will review these assignments before work begins.
@@ -919,7 +919,7 @@ Weeks 1 and 2: Research design and data preparation
 
 We will define the first model behaviour: select a permitted action and prepare a policy-compliant reply for a delayed refund request.
 
-We will confirm the Qwen mode
+We will confirm the Qwen model
 We will start the Qwen, Llama, and Mistral architecture comparison.
 We will prepare the data schema, fictional policies, permitted actions, and review Standard Operating Procedure (SOP).
 
@@ -1023,11 +1023,12 @@ If fine-tuning does not improve the strongest baseline, we will report the negat
 
 Our final goal is a reproducible research project with measured results, not an untested claim of production readiness.
 
-23. Team Responsibilities and Commitment: Who will do what, and how many hours per week can each member commit?
+## 23. Team Responsibilities and Commitment: Who will do what, and how many hours per week can each member commit?
+
 - assign research,data,training,evaluation,validation,and documentation responsibilities
 - include realistic hours per member and other commitments that affect delivery
 
-
+### Answer
 Our research team has four members. We plan to divide the work according to technical experience and learning goals.
 
 We propose a ten-week schedule. Each member will have a primary responsibility and will support the other members during reviews.
