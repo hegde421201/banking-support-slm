@@ -1476,3 +1476,30 @@ The expected outcome is a reproducible research prototype, benchmark dataset, te
 
 ### Answer
 
+1. Banking Support SLM — Project Repository
+https://gitlab.com/hegde421201/banking-support-slm
+
+This is our team's project repository. We will use it to maintain the research plan, source code, dataset documentation, model configurations, experiments, and evaluation results. The repository is a work in progress; it does not yet represent a completed or validated SLM.
+
+2. BANKING77 — Banking Intent Classification Dataset
+https://github.com/PolyAI-LDN/task-specific-datasets
+
+BANKING77 provides banking customer-query examples across 77 intent categories. We will use a selected subset to study intent classification and establish a traditional machine-learning baseline. This dataset does not provide the policy-guided actions or reference replies needed for our main delayed-refund experiment.
+
+3. BANKING77 — Research Paper
+https://arxiv.org/abs/2003.04807
+
+This paper provides the research background for the BANKING77 dataset and its intent-classification task. It helps us distinguish general banking intent recognition from our proposed policy-guided action-selection and reply-generation problem.
+
+4. Tinker — Model Training Documentation
+https://tinker-docs.thinkingmachines.ai/tinker/models/
+
+We plan to use Tinker to fine-tune a supported small Qwen model using LoRA. This documentation will help us confirm supported models before selecting the exact training configuration. Training access, costs, and successful results have not yet been established.
+
+5. Planned Research Artifacts
+
+During the proposed ten-week project, we intend to add a reviewed synthetic benchmark dataset, annotation procedure, reproducible training pipeline, baseline comparisons, model evaluation scorecard, architecture research paper, LoRA explanation materials, and demonstration to our project repository.
+
+These are planned deliverables, not completed results.
+
+We do not currently claim a deployed banking solution, an operational pilot, or validated commercial demand. We will report these limitations and make the research evidence available as it is developed.
