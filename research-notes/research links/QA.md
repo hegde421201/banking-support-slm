@@ -1118,19 +1118,225 @@ We will record actual contributions and report any significant changes to the pr
 
 We do not claim that all team members have equal experience in Machine Learning or model fine-tuning. We will use peer review, documentation, and small technical tasks to support members who are learning these skills.
 
-24. What will you deliver if the project is approved?
+## 24. What will you deliver if the project is approved?
 - specify model
 - reproducible pipeline
 - evaluation report, benchmark dataset, paper repository
 - demo or pilot available after the initial project.
 
-25. How will you keep the project moving and report progress?
+### Answer
+
+If our project is approved, we plan to deliver a reproducible Banking Support SLM research prototype within ten weeks.
+
+Our first use case will be delayed refund requests in retail banking. The system will receive a customer message, simulated case details, and a fictional banking policy. It will select a permitted support action and prepare a draft reply for human review.
+
+We propose the following deliverables.
+
+1. Fine-tuned Small Language Model
+
+We will fine-tune a small Qwen model using Low-Rank Adaptation (LoRA) on Tinker.
+
+We will select the exact Qwen version after confirming model availability, training support, and cost.
+
+We will deliver the trained adapter weights or an accessible model checkpoint, subject to platform and licensing conditions.
+
+We will document the base model, training settings, model limitations, and intended use.
+
+2. Reproducible Training and Evaluation Pipeline
+
+We will provide Python scripts for data preparation, validation, training, and evaluation.
+
+The repository will include configuration files, dependency instructions, and steps to reproduce the experiments.
+
+We will record the LoRA rank, alpha, target layers, learning rate, training epochs, and training costs.
+
+We will also include two Mermaid diagrams. One will show how a dataset example moves through the project. The other will explain the training process.
+
+3. Reviewed Benchmark Dataset
+
+We will create at least 100 human-reviewed examples for the supervised fine-tuning work.
+
+Each example will contain a customer request, simulated case details, a fictional policy, the expected permitted action, and a reference reply.
+
+We will provide an annotation Standard Operating Procedure (SOP), review records, and documented training, validation, and test splits.
+
+We will also prepare additional independent evaluation cases where resources permit.
+
+We will release synthetic examples and benchmark materials that we are permitted to share.
+
+4. Evaluation and Research Report
+
+We will compare the fine-tuned Qwen model with the prompted Qwen base model and a general-purpose frontier model.
+
+We will also evaluate a traditional Machine Learning baseline using TF-IDF, Logistic Regression, policy rules, and reply templates.
+
+The report will include action-selection accuracy, policy compliance, unsupported statements, human-reviewed reply quality, and available cost measurements.
+
+We will provide a comparative scorecard, results for each permitted action, and an analysis of at least five model failures.
+
+We will state whether the fine-tuned model supports our hypothesis of improving action-selection accuracy by at least five percentage points over the strongest relevant baseline without increasing policy violations.
+
+Negative results will also be reported.
+
+5. Architecture Research Paper
+
+We will prepare a 10–15-page LaTeX paper comparing Qwen, Llama, and Mistral.
+
+The paper will explain the main architecture blocks, design choices, trade-offs, and limitations.
+
+It will include a comparison table, at least four original figures, references, and a reading log.
+
+6. LoRA Explanation Materials
+
+We will prepare a 10–20-minute visual explanation of LoRA using Manim, or the permitted visual presentation alternative if necessary.
+
+We will also deliver the animation source code and a 4–6-page LaTeX report.
+
+The explanation will cover frozen weights, matrices A and B, rank, alpha, training, and merging.
+
+7. Public Research Repository
+
+We will maintain the project in GitLab.
+
+The repository will include the README, research documentation, source code, training configurations, permitted dataset files, evaluation scorecard, and reproducibility instructions.
+
+We will maintain a step-by-step commit history.
+
+We will not publish API keys, real customer records, or confidential banking information.
+
+8. Working Demonstration
+
+We plan to deliver a research demonstration that accepts a simulated delayed refund request and displays the selected action and draft reply.
+
+The demonstration will show the supplied policy and allow a reviewer to examine the output.
+
+We will not connect the initial prototype to live banking systems or send automated replies to customers.
+
+After the initial project, we may seek a supervised pilot with an interested banking or fintech organization.
+
+Such a pilot would require access to authorized workflows, qualified domain reviewers, appropriate data protection measures, and separate approval.
+
+Final outcome:
+
+Our main deliverable will be a reproducible research system with a documented dataset, trained model, baseline comparisons, evaluation results, and a working demonstration.
+
+We will report whether fine-tuning provides a measurable advantage.
+
+We will not claim production readiness or commercial performance without further validation.
+
+## 25. How will you keep the project moving and report progress?
 - describe weekly milestones
 - internal reviews
 - experiment tracking
 - documentation,
 - communication blockers
 - accountability
+
+### Answer
+
+We will manage the Banking Support SLM project through weekly milestones, GitLab collaboration, experiment tracking, and documented technical reviews.
+
+Our proposed project duration is ten weeks. We will assign one primary owner to each deliverable and record the expected result before work begins.
+
+1. Weekly milestones and progress reviews
+
+We will maintain a ten-week milestone plan in GitLab.
+
+Each milestone will have defined tasks, an owner, a target completion date, and an expected deliverable.
+
+We will hold one weekly team review to check completed work, review technical results, and identify blockers.
+
+Our planned milestones are:
+
+Weeks 1–2: Research scope, architecture study, dataset schema, review SOP, and evaluation design.
+
+Weeks 3–4: Reviewed dataset, traditional ML baseline, prompted model baselines, and initial LoRA explanation.
+
+Weeks 5–6: Architecture paper, LoRA video and report, and the first Tinker fine-tuning experiment.
+
+Weeks 7–8: Held-out evaluation, comparative scorecard, policy-error analysis, and model failure review.
+
+Weeks 9–10: Corrections, final experiments where feasible, reproducibility checks, documentation, and final submission.
+
+2. GitLab collaboration and accountability
+
+We will use our existing GitLab repository to manage source code, research documents, and experiment configurations.
+
+We will create issues for major tasks and assign an owner to each issue.
+
+Team members will work on separate branches and submit merge requests for review.
+
+We will maintain a step-by-step commit history so that reviewers can examine how the project developed.
+
+The project lead will track unfinished tasks and coordinate reassignment when necessary.
+
+3. Experiment tracking
+
+We will record each model experiment using a unique experiment identifier.
+
+The record will include the dataset version, model version, training configuration, random seed where applicable, evaluation results, and cost.
+
+For LoRA experiments, we will record rank, alpha, target layers, learning rate, epochs, and training and validation losses.
+
+We will retain failed experiment records and explain what we learned.
+
+We will not change the final test dataset to improve reported results.
+
+4. Internal technical reviews
+
+We will review the dataset before training.
+
+The review will check missing fields, contradictory labels, duplicate examples, and agreement between reviewers.
+
+We will review the baseline results before starting fine-tuning.
+
+After training, we will inspect the comparative scorecard and at least five failed model examples.
+
+We will check whether the results support our original research hypothesis.
+
+We will also review the architecture paper, LoRA video, and repository documentation before submission.
+
+5. Blocker management
+
+Team members will report blockers through GitLab issues and team communication.
+
+Important blockers may include Tinker access, compute costs, unclear banking policies, inconsistent data labels, and model evaluation failures.
+
+We will record the blocker, its owner, its effect on the schedule, and the proposed next action.
+
+We will raise critical blockers during the weekly review or earlier if they prevent planned work.
+
+If a blocker cannot be resolved, we will reduce the experiment scope or use a documented fallback rather than hide the delay.
+
+6. Progress reporting to SBL
+
+We propose to provide SBL with a short weekly progress report.
+
+Each report will include:
+
+Work completed during the week.
+
+Links to relevant GitLab commits, documents, or experiment records.
+
+Measured results, where available.
+
+Open problems and risks.
+
+Work planned for the following week.
+
+Support required from SBL, if any.
+
+We will distinguish completed work from planned work and preliminary findings from validated results.
+
+7. Final accountability
+
+At the end of ten weeks, we will submit the repository, research paper, LoRA explanation materials, dataset documentation, training artifacts, and evaluation report.
+
+We will document each team member's contribution.
+
+We will report negative results and limitations.
+
+Our measure of progress will be completed and reviewable technical evidence, not the number of meetings, commits, or claims about model performance.
 
 SECTION 6: Support Requirements and Funding
 26. Resource Requirements and Budget: What support do you need from SBL, and what is your estimated project budget?
