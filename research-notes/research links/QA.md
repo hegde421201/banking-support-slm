@@ -34,12 +34,15 @@ We have not interviewed banking support staff or tested competing products. We n
 We do not yet have measured support costs or request volumes from any bank or fintech company.
 
 ## 11. Market Research and Competition: What evidence validates this problem, and what competing solutions have you researched? Include links.
-
 Our research is based on published reports, public documents, and an initial review of competing solutions. We have also reviewed the interface.ai website.
 
 We plan to use public datasets and create additional examples that people will review before training. We have not interviewed users or tested competing products ourselves.
 
-We want to study banking customer-support problems in Indian retail banks and fintech payment companies. We do not claim that our proposed SLM will perform better than existing products. We will test this during our research.
+We want to study banking customer-support problems in Indian retail banks,corporate banks and fintech payment companies. We do not claim that our proposed SLM will perform better than existing products. We will test this during our research.
+
+Our four-person research team includes a BFSI domain programmer (Sarfaraj Ejaj).
+This collaborator has reported that some customer queries can take four to five days to complete. We have not yet measured the average handling or resolution time.
+The collaborator will help us study banking workflows and review fictional support scenarios. We will use this input to identify which tasks may benefit from automated action selection and draft reply preparation.
 
 Evidence of the problem:
 
@@ -505,4 +508,655 @@ We will measure these limitations and report them.
 If Tinker does not support our first model choice, we will select another small Qwen model that meets the training requirements.
 
 We will not claim production readiness or business savings from this initial experiment.
+
+## 18. What makes this model difficult to replicate?
+
+- discuss specialised data
+- evaluation,domain representations
+- workflow integration
+- cost performance
+- training advantages
+
+Fine tuning is not a defensible advantage.
+
+### Answer
+
+We do not claim that fine-tuning a Qwen model is difficult to replicate. Other teams can use the same pretrained models and training methods.
+
+Our potential advantage will come from the quality of our banking-support data, policy representations, evaluation methods, and workflow design.
+
+Specialized data:
+
+We plan to create a dataset of banking-support cases that contain more information than an intent label.
+
+Each example will include a customer message, simulated account details, a fictional banking policy, the correct permitted action, and a reference reply.
+
+We will include cases with missing information, different refund statuses, and requests that need human review.
+
+Our four-person team includes a programmer with experience in the Banking, Financial Services, and Insurance (BFSI) sector. This experience can help us design realistic technical scenarios.
+
+However, we will still need to confirm that our scenarios represent real banking work.
+
+Evaluation:
+
+We will develop tests that check whether a model follows a supplied policy and selects the correct action.
+
+We will also test whether a reply contains unsupported statements, invents a refund date, or fails to request missing information.
+
+We plan to include difficult cases where a small change in account status or policy changes the correct action.
+
+These tests may become a useful research asset because they measure banking decisions rather than general language quality.
+
+Domain representations:
+
+We will represent each case using a defined set of fields, permitted actions, and policy conditions.
+
+We will keep the policy version with each test case.
+
+This will help us test whether the model uses the supplied facts and follows the correct policy.
+
+Workflow integration:
+
+Our proposed workflow will support message classification, policy checking, action selection, draft reply preparation, and human review.
+
+The first prototype will not connect to real banking systems.
+
+Future integration with authorized bank systems may provide additional value. However, we do not claim that these integrations already exist.
+
+Cost and performance:
+
+We will measure action accuracy, policy compliance, reply quality, response time, and inference cost.
+
+We want to find out whether a small specialized model can meet the task requirements at a lower cost than a larger general-purpose model.
+
+We have not yet demonstrated this advantage.
+
+Training advantages:
+
+We plan to maintain reviewed examples, policy versions, error records, and repeatable evaluation tests.
+
+These resources may help us improve the system when new request types or policies are added.
+
+Our potential advantage is not the LoRA training method. It is the combination of reliable domain data, policy tests, and a repeatable improvement process.
+
+Current limitations:
+
+We do not have exclusive banking data, proprietary model weights, customer contracts, or production integrations.
+
+Our first dataset will be small and will use fictional policies.
+
+We therefore do not claim that the first prototype has a defensible competitive advantage.
+
+Our research goal is to determine whether the domain data, evaluation methods, and workflow design can become useful assets that are difficult to reproduce at the same quality and cost.
+
+
+SECTION 4: Evaluation and Research Quality
+
+## 19. Evaluation Strategy: Which baselines and metrics will you use to demonstrate that your SLM performs better?
+
+- define primary metrics
+- target improvement
+- test conditions
+- commercial/open-source/non LLm/human baselines
+- and fair comparisons using comparable prompts
+- test data, settings and costs
+- include accuracy, factuality,latency,inference cost,task completion or human ratings as appropriate
+
+### Answer
+We will evaluate whether our fine-tuned Banking Support SLM can select the correct support action and prepare a useful reply that follows the supplied banking policy.
+
+Our first evaluation will focus on delayed refund requests.
+
+1. Baselines
+
+We will compare four systems.
+
+Baseline A: Traditional Machine Learning (ML).
+
+This system will use TF-IDF and Logistic Regression for intent classification. Deterministic policy rules will select the next action. Approved templates will prepare the reply.
+
+Baseline B: Prompted Qwen.
+
+We will test the selected Qwen base model without fine-tuning. It will receive the customer message, simulated account details, policy, and output instructions.
+
+Baseline C: General-purpose frontier model.
+
+We will test a capable general-purpose language model using the same case information and task instructions.
+
+Baseline D: Fine-tuned Qwen.
+
+We will fine-tune a small Qwen model with LoRA on Tinker. We will evaluate it on the same held-out cases.
+
+We also plan to ask human reviewers to complete a sample of cases. This will provide a reference for task time, action correctness, and reply quality.
+
+We will not claim to have evaluated a commercial banking product unless we can obtain access and run comparable tests.
+
+2. Primary metric
+
+Our primary metric will be action-selection accuracy.
+For each test case, we will compare the selected action with the human-reviewed reference action.
+Action-selection accuracy is the number of correct actions divided by the total number of evaluated cases.
+
+Our earlier Q15 hypothesis is that the fine-tuned Qwen model will improve action-selection accuracy by at least five percentage points over the strongest relevant baseline.
+
+We will compare the models using the same held-out test cases.
+
+3. Policy compliance and factuality
+
+We will check whether each selected action and draft reply follow the supplied policy.
+We will record policy violations separately from action-selection errors.
+We will also count unsupported statements. These include invented transaction facts, incorrect refund status, and refund dates that the input does not confirm.
+We will report the number and rate of these errors.
+An improvement in action accuracy will not be sufficient if the fine-tuned model produces more policy violations or unsupported statements.
+
+4. Reply quality
+
+Human reviewers will assess draft replies using a defined scoring guide.
+They will check whether each reply is correct, clear, complete, and consistent with the supplied policy.
+We will record whether the reviewer accepts the reply, edits it, or rejects it.
+We will also measure the time needed to review and correct a reply.
+
+5. Latency and inference cost
+
+We will measure response time for each system.
+We will record token usage and the cost of model inference where this information is available.
+For hosted models, we will use the applicable service prices.
+For the traditional ML baseline, we will record the computing resources and processing time.
+We will report the test environment and cost assumptions. We will not claim a cost advantage without measurements.
+
+6. Fair test conditions
+
+We will use the same customer messages, simulated account details, fictional policies, and permitted actions for systems that perform the same task.
+
+We will use comparable task instructions and output formats for language models.
+We will record the model version, prompt version, generation settings, and test conditions.
+We will use a fixed test set that is separate from training and model selection.
+We will check for duplicate and closely related examples across the data splits.
+We will not compare BANKING77 intent-classification accuracy directly with policy-action accuracy.
+
+7. Test cases
+
+We will create at least 100 human-reviewed examples for the supervised fine-tuning work.
+We will divide the examples into training, validation, and test sets.
+We will seek additional independent test cases to evaluate the five-percentage-point hypothesis.
+Our test cases will include different refund statuses, missing information, policy changes, and cases that need human review.
+We will also test cases where a small change in the input changes the correct action.
+
+8. Research decision
+
+We will report the results for every baseline, including cases where the fine-tuned model performs worse.
+We will report the number of test cases and the uncertainty in the measured differences.
+
+Our hypothesis will not be supported if fine-tuned Qwen fails to improve action-selection accuracy by at least five percentage points over the strongest baseline.
+
+We will not recommend the fine-tuned model if it causes more policy violations or unsupported statements.
+
+If a prompted model or the traditional ML system performs equally well at lower cost, we will prefer the simpler system.
+
+Our goal is to identify the most suitable approach for the task, not to prove that fine-tuning is always necessary.
+
+## 20. How will you construct a reliable evaluation dataset?
+
+- explain representative examples
+- ground truth
+- ambiguous cases
+- leakage prevention
+- training/validation/test splits
+- and human or expert annotation
+
+### Answer
+
+We will create a separate evaluation dataset for our Banking Support SLM. The dataset will test whether the system selects the correct support action and prepares a reply that follows the supplied banking policy.
+
+1. Representative examples
+
+Our first use case will be delayed refund requests.
+We will create examples with different refund statuses, transaction details, missing information, and policy conditions.
+We will include simple cases, difficult cases, and cases that require human review.
+We will also include cases where a small change in the refund status or policy changes the correct action.
+
+We will use fictional banking policies and simulated account information.
+Our four-person team includes a programmer with experience in the BFSI sector. This collaborator can help us review the technical details of the scenarios.
+
+We will seek additional feedback to check whether the scenarios represent real support work.
+
+2. Ground truth
+
+Each example will contain a customer message, simulated case details, an applicable policy, a correct permitted action, and a reference reply.
+
+We will determine the correct action from the supplied policy and case details.
+The reference reply must use only the available information. It must not invent a transaction status, refund date, or other unsupported fact.
+We will record the policy version and the reason for the expected action.
+
+3. Ambiguous cases
+
+Some requests may not contain enough information to select an action.
+
+We will mark these cases separately.
+
+The expected action may be to request missing information or send the case for human review, according to the policy.
+
+If the reviewers cannot agree on the correct action, we will examine the policy and the case details.
+
+We will not force an uncertain case into an incorrect label.
+
+4. Human review
+
+Our team will use written annotation rules.
+At least two team members will review each evaluation example independently.
+They will check the action label, policy compliance, and reference reply.
+We will record disagreements and resolve them before finalizing the dataset.
+
+For cases that need banking operations knowledge, we will seek qualified domain review. We will not treat software engineering experience as a substitute for banking policy authority.
+
+5. Data splits and leakage prevention
+
+We will create separate training, validation, and test sets.
+
+Training examples will be used for fine-tuning. Validation examples will be used for model selection and development. Test examples will be reserved for final evaluation.
+
+We will keep related examples together in one split when they share the same underlying scenario.
+We will check for duplicate messages, repeated templates, and cases with nearly identical facts across different splits.
+
+We will not use final test cases to select prompts, change training settings, or improve the model.
+
+6. Dataset size and quality
+
+Our initial target is at least 100 human-reviewed examples for the supervised fine-tuning work.
+We will seek additional independent evaluation cases because 100 examples may not be sufficient to measure a small difference in accuracy.
+
+We will record the number of examples in each split and report results separately for important case types.
+We will use JSONL files with unique case identifiers, policy versions, review status, and expected outputs.
+We will check each record for missing fields, conflicting labels, unsupported facts, and personal information.
+
+7. Evaluation reliability
+
+We will use the same held-out cases to compare the traditional ML baseline, prompted Qwen, the frontier model, and fine-tuned Qwen.
+
+We will define the scoring rules before final testing.
+We will measure action-selection accuracy, policy compliance, unsupported statements, and human-rated reply quality.
+We will report the test-set size and uncertainty in the measured differences.
+We will also publish our evaluation rules and permitted synthetic examples where licensing and permissions allow.
+
+Our goal is to create a repeatable evaluation process that can show both the strengths and the failures of the proposed SLM.
+
+
+## 21. Risks and Failure Criteria: What are your three biggest risks, and what results would make you reconsider the approach?
+
+- For each risk,explain importance,early testing, and fallback.
+- State evidence or experiments that would invalidate your hypothesis and cause 
+abandonment or substantial change
+
+### Answer
+
+Our Banking Support SLM project has three main risks. We will test these risks early and use the results to decide whether to continue, change, or stop the proposed approach.
+
+1. Risk: The training and evaluation data may not represent real banking work.
+
+Our first dataset will use fictional policies and simulated account information.
+
+These examples can help us test model behaviour. However, they may not represent the problems that banking support staff handle every day.
+
+Our four-person team includes a programmer with BFSI experience. This collaborator can help us review technical scenarios. We will also seek feedback from banking support or operations staff.
+
+Early test:
+
+We will create a small set of delayed refund scenarios before fine-tuning.
+
+We will check whether the policies are clear, whether the expected actions are correct, and whether reviewers agree on the labels.
+
+We will record disagreements and cases that do not have a clear answer.
+
+Fallback:
+
+If the examples are not reliable, we will improve the policy definitions and annotation rules before training.
+
+If we cannot establish reliable ground truth, we will stop the fine-tuning experiment for this use case.
+
+We will not claim that synthetic data proves performance in a real bank.
+
+2. Risk: The fine-tuned SLM may select incorrect actions or generate replies that violate policy.
+
+A model may select an action that is not permitted by the supplied policy.
+
+It may also invent a refund status, promise an unsupported refund date, or fail to request missing information.
+
+These errors are important because banking support staff need correct information before they can advise customers.
+
+Early test:
+
+We will evaluate the prompted Qwen model before fine-tuning.
+
+We will test cases with known refund status, missing information, conflicting details, and different policy conditions.
+
+We will measure action-selection accuracy, policy violations, and unsupported statements.
+
+After fine-tuning, we will repeat the evaluation on held-out cases.
+
+Fallback:
+
+If the SLM makes unacceptable policy errors, we will keep action selection under deterministic policy rules and use the model only for draft reply preparation.
+
+The selected action and policy will remain fixed inputs to the reply generator.
+
+A human support staff member must review each draft before customer use.
+
+If the model continues to produce unsafe or unreliable replies, we will stop using it for reply generation.
+
+3. Risk: Fine-tuning may not provide enough value compared with simpler systems.
+
+Our traditional ML baseline uses TF-IDF, Logistic Regression, deterministic policy rules, and approved reply templates.
+
+We will also test a prompted Qwen model and a general-purpose frontier model.
+
+These alternatives may perform as well as the fine-tuned SLM.
+
+Early test:
+
+We will compare the systems on the same held-out cases.
+
+Our primary metric is action-selection accuracy.
+
+Our Q15 hypothesis requires the fine-tuned Qwen model to improve action-selection accuracy by at least five percentage points over the strongest relevant baseline.
+
+We will also measure policy compliance, reply quality, response time, and inference cost.
+
+Fallback:
+
+If the fine-tuned model does not achieve the five-percentage-point improvement, our primary hypothesis will not be supported.
+
+If it improves accuracy but increases policy violations or unsupported statements, we will not recommend it for the proposed task.
+
+If a simpler system achieves similar quality with lower cost, we will select the simpler approach.
+
+We may then narrow the SLM task to reply preparation or investigate another banking-support use case.
+
+Research failure criteria:
+
+We will substantially change or stop the proposed approach if we cannot establish reliable ground truth, if the model continues to produce unacceptable policy errors, or if fine-tuning provides no useful advantage over the strongest baseline.
+
+We will report negative results as part of our research.
+
+Our goal is not to prove that an SLM is always the correct solution. Our goal is to identify which banking-support tasks benefit from specialization and which tasks are better handled by conventional software.
+
+SECTION 5: Execution Plan and Team Leadership
+22. Provide a proposed 8–12 week execution plan
+
+- break into milestones,validation,baselines,dataset,training,evaluation,iteration,final 
+deliverable.
+- identify owner and expected outcome for each
+
+### Answer
+We propose a ten-week research and development plan for our Banking Support SLM.
+
+Our four-person team will work on three technical deliverables from the Antern course brief.
+
+Member 1 (Project Lead): Ganesh Hegde
+Member 2: Rishik Kumar Balanagu
+Member 3: Shriyansh Sinha
+Member 4: Sarfaraj Ejaj
+
+Part A: A research paper comparing Qwen, Llama, and Mistral.
+Part B: A visual explanation of Low-Rank Adaptation (LoRA), with a video, source code, and report.
+Part C: A Banking Support SLM trained with LoRA on Tinker, with a reviewed dataset and evaluation report.
+
+We will work on these parts in parallel.
+
+Proposed responsibilities:
+
+Member 1, Project Lead: System design, research coordination, baseline development, evaluation, and final integration.
+
+Member 2, Training and Visualization Contributor: Python training support, Tinker experiments, Manim animations, and experiment records.
+
+Member 3, Data and Research Contributor: Dataset preparation, annotation records, architecture research, and documentation.
+
+Member 4: BFSI Programmer: Banking scenario design, fictional policy rules, data review, and domain-related validation.
+
+
+The team will review these assignments before work begins.
+
+Weeks 1 and 2: Research design and data preparation
+
+We will define the first model behaviour: select a permitted action and prepare a policy-compliant reply for a delayed refund request.
+
+We will confirm the Qwen mode
+We will start the Qwen, Llama, and Mistral architecture comparison.
+We will prepare the data schema, fictional policies, permitted actions, and review Standard Operating Procedure (SOP).
+
+We will define the evaluation metrics before training.
+
+Owners: Members 1, 2, and 4, with Member 3 checking model access.
+
+Expected outcome: Research scope, initial architecture notes, data schema, review SOP, evaluation plan, and confirmed training requirements.
+
+Weeks 3 and 4: Dataset, baselines, and LoRA explanation
+
+We will create at least 100 human-reviewed examples. We will check label balance, contradictions, and duplicate cases.
+
+We will create separate training, validation, and test sets.
+We will build the traditional ML baseline using TF-IDF, Logistic Regression, policy rules, and approved reply templates.
+We will evaluate the prompted Qwen base model and one frontier model.
+
+We will record decision accuracy and draft reply quality.
+
+We will also develop the LoRA explanation. The video will show the frozen weights, matrices A and B, rank, alpha, training, and merging.
+
+Owners: Members 1 and 4 for the baseline and policy checks. Member 3 for dataset review and architecture research. Member 2 for LoRA animation.
+
+Expected outcome: Reviewed dataset, baseline results, initial scorecard, and LoRA video draft.
+
+Weeks 5 and 6: Fine-tuning and research deliverables
+
+We will complete the architecture comparison paper.
+
+The paper will compare Qwen, Llama, and Mistral using the same model blocks. It will explain important design decisions, costs, and trade-offs.
+
+We will prepare a 10–15-page LaTeX paper with a comparison table, at least four original figures, and a reading log.
+
+We will complete the 10–20-minute LoRA video and the 4–6-page LaTeX report.
+
+For the SLM, we will record the base model, LoRA rank, alpha, target layers, learning rate, epochs, and estimated training cost.
+
+We will run a dry test before training.
+
+We will then fine-tune the selected Qwen model on Tinker and save the adapter weights.
+
+Owners: Members 1 and 4 for the architecture paper. Member 2 for the LoRA video and training implementation. Member 3 for policy and data checks.
+
+Expected outcome: Architecture paper, LoRA video and report, and at least one completed LoRA training run with recorded settings and losses.
+
+Weeks 7 and 8: Evaluation and error analysis
+
+We will evaluate the fine-tuned Qwen model on the held-out test set.
+
+We will compare it with the prompted Qwen base model and the frontier model using the same scoring method.
+
+We will also compare the traditional ML baseline on the tasks that it supports.
+
+We will measure action-selection accuracy, policy compliance, reply quality, and unsupported statements.
+
+We will report results for each permitted action, not only the total score.
+
+We will examine at least five failed examples and explain the possible causes.
+
+We will record response time and resource costs where measurement is available.
+
+Owners: Member 1 for evaluation. Member 4 for policy review. Member 2 for error analysis and reporting. Member 3 for model runs and experiment logs.
+
+Expected outcome: Comparative scorecard, error analysis, and a decision on whether fine-tuning supports our research hypothesis.
+
+Weeks 9 and 10: Improvements and final submission
+
+We will use the evaluation results to identify data or model problems.
+
+If time and resources permit, we will correct the data and run another controlled experiment.
+
+We will prepare a public GitLab/GitHub repository with a clear README, step-by-step commit history, dataset or permitted sample, review SOP, training configuration, and scorecard.
+
+We will include two Mermaid diagrams. One will show how a data example moves through the project files. The other will show the training process.
+
+We will check that the repository does not contain API keys or confidential data.
+
+We will complete the research report and prepare a demonstration of the delayed refund workflow.
+
+Owners: Member 1 for final integration. Member 4 for domain checks. Member 3 for research documentation. Member 2 for training artifacts and demonstration support.
+
+Expected outcome: Reproducible project repository, final evaluation report, research paper, LoRA explanation materials, and working research demonstration.
+
+Public research communication:
+
+Each member may publish their own learning notes, figures, experiment results, and corrections on LinkedIn or X.
+
+The Antern brief sets a target of 150–200 pieces of content for Part D, with no fixed deadline.
+
+We will keep a record of published work. We will not make completion of all these posts a condition for the ten-week technical project.
+
+Project controls:
+
+We will review progress each week.
+
+We will keep experiment configurations, dataset versions, evaluation results, and decisions in GitLab.
+
+We will record blockers related to Tinker access, computing costs, dataset quality, and model performance.
+
+If fine-tuning does not improve the strongest baseline, we will report the negative result and explain what we learned.
+
+Our final goal is a reproducible research project with measured results, not an untested claim of production readiness.
+
+23. Team Responsibilities and Commitment: Who will do what, and how many hours per week can each member commit?
+- assign research,data,training,evaluation,validation,and documentation responsibilities
+- include realistic hours per member and other commitments that affect delivery
+
+
+Our research team has four members. We plan to divide the work according to technical experience and learning goals.
+
+We propose a ten-week schedule. Each member will have a primary responsibility and will support the other members during reviews.
+
+The responsibilities and weekly hours below are proposed. We will confirm them with all team members before the project begins.
+
+Member 1: Project Lead and System Design
+
+Proposed commitment: 10 hours per week.
+
+I will coordinate the project and maintain the technical plan.
+
+My responsibilities will include system design, the traditional Machine Learning (ML) baseline, evaluation design, integration, and final research reporting.
+
+I have more than 15 years of experience in software engineering. I will apply my experience in software architecture, testing, code review, and team coordination.
+
+I will also contribute to the Qwen, Llama, and Mistral architecture paper.
+
+Member 2: Model Training and Visualization
+
+Proposed commitment: 8 hours per week.
+
+This member will help develop Python scripts, prepare Tinker training configurations, and record experiment results.
+
+They will contribute to the LoRA explanation video using Manim and help prepare the accompanying report.
+
+They will work with Member 1 on model evaluation and the final demonstration.
+
+Member 3: Data Engineering and Research
+
+Proposed commitment: 8 hours per week.
+
+This member will help prepare the dataset, maintain annotation records, check data quality, and document the training, validation, and test splits.
+
+They will also contribute to the architecture research paper, reading log, references, and original figures.
+
+This member will work with Member 4 to identify contradictory labels, duplicate examples, and missing information.
+
+Member 4: BFSI Domain and Policy Development
+
+Proposed commitment: 8 hours per week.
+
+This collaborator has software development experience in the Banking, Financial Services, and Insurance (BFSI) sector.
+
+Their proposed responsibilities include defining fictional banking workflows, preparing policy rules, reviewing simulated cases, and testing action-selection logic.
+
+He will help us identify technical assumptions that need confirmation from banking support or operations staff.
+
+We will not treat BFSI programming experience as proof of authority over banking operations or customer-support policies.
+
+Shared responsibilities:
+
+All four members will participate in dataset review, technical discussions, code reviews, and weekly progress checks.
+
+We will use GitLab/GitHub issues, branches, merge requests, and experiment records to track work.
+
+We will assign one owner to each major deliverable. Other members will provide reviews and support.
+
+The project lead will check progress against the ten-week schedule.
+
+Research and evaluation:
+
+Members 1, 3 and 4 will coordinate the research paper.
+
+Members 2 and 3 will prepare the LoRA explanation materials.
+
+Members 2, 3 and 4 will coordinate dataset preparation and review.
+
+Members 1 and 3 will coordinate the baseline and fine-tuning experiments.
+
+All members will review the final evaluation report. We will record each person's contribution.
+
+Other commitments and delivery risks:
+
+We expect team members to complete this project alongside their existing professional or personal commitments.
+
+We will confirm individual availability before the project begins.
+
+We will reserve weeks 9 and 10 for corrections, additional experiments, documentation, and unexpected technical problems.
+
+If a member cannot complete an assigned task, we will review the schedule and reassign the work.
+
+Our proposed weekly commitment is 34 team-hours.
+
+Over ten weeks, this represents approximately 340 team-hours, subject to actual availability.
+
+We will record actual contributions and report any significant changes to the project plan.
+
+We do not claim that all team members have equal experience in Machine Learning or model fine-tuning. We will use peer review, documentation, and small technical tasks to support members who are learning these skills.
+
+24. What will you deliver if the project is approved?
+- specify model
+- reproducible pipeline
+- evaluation report, benchmark dataset, paper repository
+- demo or pilot available after the initial project.
+
+25. How will you keep the project moving and report progress?
+- describe weekly milestones
+- internal reviews
+- experiment tracking
+- documentation,
+- communication blockers
+- accountability
+
+SECTION 6: Support Requirements and Funding
+26. Resource Requirements and Budget: What support do you need from SBL, and what is your estimated project budget?
+
+- Itemize compute,APIs,subscriptions,datasets,annotation,feedback,mentorship and publication 
+support
+- explain each resource's purpose,cost estimate,assumptions and resources you can contribute
+
+27. What level of financial support are you seeking?
+(Pick one choice)
+
+Funding and compensation are not guaranteed. Any arrangement will depend on project approval, scope, progress, available resources, and mutually agreed terms.
+- Primarily tech resources and mentorship
+- Tech resources plus a potential paid arrangement based on milestones
+- A funded R & D engagement
+- I am open to discussing the structure based on project scope and demonstrated progress.
+
+SECTION 7: Final Proposal and Commitment
+29. Final Research Pitch: Summarize your proposal, its strongest evidence, and why your team deserves selection
+-in 250-400 words,cover problem,users,demand,SLM,hypothesis,differentiation
+-evaluation,impact,and evidence of team strengths
+- avoid generic claims
+
+30. Share supporting links
+- Include repositories
+- papers,blogs,prototypes,demos,benchmarks,market research and a brief explanation of relevance
+
+
 
